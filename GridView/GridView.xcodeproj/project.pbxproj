@@ -15,6 +15,7 @@
 		65A91FF526C10F39008047BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65A91FF426C10F39008047BD /* Preview Assets.xcassets */; };
 		65A91FF826C10F39008047BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A91FF626C10F39008047BD /* LaunchScreen.storyboard */; };
 		65A9200026C119DF008047BD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A91FFF26C119DF008047BD /* Item.swift */; };
+		65A9200426C124B1008047BD /* SingleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9200326C124B1008047BD /* SingleRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		65A91FF726C10F39008047BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65A91FF926C10F39008047BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65A91FFF26C119DF008047BD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		65A9200326C124B1008047BD /* SingleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				65A91FEA26C10F38008047BD /* SceneDelegate.swift */,
 				65A91FEC26C10F38008047BD /* ContentView.swift */,
 				65A91FFF26C119DF008047BD /* Item.swift */,
+				65A9200326C124B1008047BD /* SingleRow.swift */,
 				65A91FF126C10F39008047BD /* Assets.xcassets */,
 				65A91FF626C10F39008047BD /* LaunchScreen.storyboard */,
 				65A91FF926C10F39008047BD /* Info.plist */,
@@ -153,6 +156,7 @@
 			files = (
 				65A9200026C119DF008047BD /* Item.swift in Sources */,
 				65A91FE926C10F38008047BD /* AppDelegate.swift in Sources */,
+				65A9200426C124B1008047BD /* SingleRow.swift in Sources */,
 				65A91FEB26C10F38008047BD /* SceneDelegate.swift in Sources */,
 				65A91FF026C10F38008047BD /* GridView.xcdatamodeld in Sources */,
 				65A91FED26C10F38008047BD /* ContentView.swift in Sources */,
