@@ -12,16 +12,24 @@ struct ContentView: View {
     @State private var users = [User]()
 
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: [GridItem(.flexible())], content: {
-                ForEach(users) { user in
-                    HStack {
-                        URLImage(urlString: user.avatar)
-                        Text("\(user.name)")
-
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: [GridItem(.flexible())], content: {
+                    ForEach(users) { user in
+                        NavigationLink(
+                            destination: UserDetailView(user: user),
+                            label: {
+                                HStack {
+                                    URLImage(urlString: user.avatar)
+                                        .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                                    Text("\(user.name)")
+                                    Spacer()
+                                }
+                            })
                     }
-                }
-            })
+                })
+            }
+            .navigationTitle("User List")
         }
         .onAppear {
             WebService().loadUsers { users in

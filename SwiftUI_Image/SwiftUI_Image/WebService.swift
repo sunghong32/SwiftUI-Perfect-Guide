@@ -66,7 +66,6 @@ struct URLImage: View {
     var body: some View {
         Image(uiImage: loader.image ?? UIImage(named: "defaultPhoto")!)
             .resizable()
-            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-            .aspectRatio(contentMode: .fill)
+            .aspectRatio(contentMode: .fit)
     }
 }
